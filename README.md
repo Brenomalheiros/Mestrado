@@ -1,4 +1,4 @@
-# PANORAMA AMBIENTAL DAS ÁREAS VERDES INTRAURBANAS NOS MUNICÍPIOS DA REGIÃO METROPOLITANA DE RIBEIRÃO PRETO ATRAVÉS DE INTELIGÊNCIA GEOESPACIAL
+## PANORAMA AMBIENTAL DAS ÁREAS VERDES INTRAURBANAS NOS MUNICÍPIOS DA REGIÃO METROPOLITANA DE RIBEIRÃO PRETO ATRAVÉS DE INTELIGÊNCIA GEOESPACIAL
 
 _Dissertação apresentada ao Programa de Pós-Graduação em Engenharia Urbana da Universidade Federal de São Carlos, como parte dos requisitos para obtenção do título de mestre em Engenharia Urbana_
 
@@ -33,7 +33,6 @@ Amostras são geradas automaticamente com base no MapBiomas e Dynamic World, som
 - Algoritmo: `Random Forest`
 - Classes: `arbórea`, `herbácea`, `impermeável`, `água`
 - Entradas: bandas, índices e frações espectrais
-- Treinamento iterativo para otimizar acurácia e tempo computacional
 
 ## 🧩 Tratamento de Pixels Mistos
 
@@ -42,16 +41,14 @@ O estudo incorpora frações espectrais (SMA) diretamente na classificação par
 ## 🧽 Filtros e Recuperação de Dados
 
 Foram utilizados filtros de reconstrução com base em:
-1. Informações espaciais (ex: interpolação, difusão)
-2. Correlações espectrais entre bandas
-3. Séries temporais para criar mosaicos sem nuvens
-4. Métodos híbridos, combinando abordagens
+1. Informações espaciais por analise de vizinhança
+2. Séries temporais para criar mosaicos sem nuvens e correção de omissões e comissões
 
 ## ✅ Validação
 
 A validação considera:
-- Amostragem estratificada por classe (baseada no MapBiomas)
-- Comparação com dados de referência compatíveis em escala e tempo
+- Amostragem estratificada por classe
+- Comparação com dados de referência produzido via app
 - Cálculo de métricas de acurácia conforme Olofsson et al. (2014)
 
 ## 📜 Tabela de Scripts e Funções
