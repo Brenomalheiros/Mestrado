@@ -70,7 +70,7 @@ GEE/
 ├── 1002-ML_RMRP-multiModel
 ├── 1003-ML_filtro_temporal
 ├── utils/
-│   └── funções auxiliares (índices, SMA, normalização etc.)
+│   └── APP de Validação visual
 └── README.md
 ```
 
