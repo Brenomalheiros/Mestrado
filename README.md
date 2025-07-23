@@ -56,27 +56,11 @@ A validação considera:
 | Nome do Script / Notebook        | Etapa do Pipeline                 | Descrição Resumida                                                                 |
 |----------------------------------|-----------------------------------|-------------------------------------------------------------------------------------|
 | `1001_selfSampling`              | Geração de Amostras               | Cria 30.000 pontos aleatórios com dados espectrais a partir do MapBiomas/DW.       |
-| `Sample_reviewer.ipynb`          | Seleção Automática e Visualização | Processa e estrutura amostras com geometria para posterior classificação.          |
+| `Sample_reviewer.ipynb`          | Seleção Automática das amostras de Classificação | Processa e estrutura amostras para posterior uso classificação com base na série de índices espectrais utilizados. São removidos outliers e amostras com comportamento divergente ao da classe .          |
 | `sample_label.py`                | Validação Visual das Amostras     | Interface para rotulagem manual com base em mosaicos Landsat (RGB, NDVI, MNDWI).   |
 | `1002-ML_RMRP-multiModel`        | Classificação Supervisionada      | Treina/aplica Random Forest com mosaicos e amostras validadas.                     |
 | `1003-ML_filtro_temporal`        | Pós-processamento Temporal        | Suaviza ruídos temporais aplicando filtro K3 à série classificada.                |
 
-
-
-| Nome do Script / Notebook        | Etapa do Pipeline           | Descrição Resumida                                                                 |
-|----------------------------------|-----------------------------|-------------------------------------------------------------------------------------|
-| `1001_selfSampling`              | Geração de Amostras         | Cria 30.000 pontos aleatórios com dados espectrais a partir do MapBiomas/DW.       |
-| `Sample_reviewer.ipynb`          | Seleção Automática e Visualização de Amostras  | Lê e converte CSV das amostras, permitindo a visualização e estruturação espacial das amostras para posterior classificação.|
-| `1002-ML_RMRP-multiModel`        | Classificação Supervisionada| Treina/aplica Random Forest com mosaicos e amostras validadas.                     |
-| `1003-ML_filtro_temporal`        | Pós-processamento Temporal  | Suaviza ruídos temporais aplicando filtro K3 à série classificada.                |
-
-
-
-| Nome do Script                 | Etapa do Pipeline                  | Descrição Resumida                                                                 |
-|-------------------------------|------------------------------------|-------------------------------------------------------------------------------------|
-| `1001_selfSampling`           | Geração de Amostras                | Cria 30.000 pontos aleatórios balanceados com base em MapBiomas/Dynamic World.     |
-| `1002-ML_RMRP-multiModel`     | Classificação Supervisionada       | Treina/aplica Random Forest com atributos Landsat (bandas, índices, SMA) por ano.  |
-| `1003-ML_filtro_temporal`     | Pós-processamento Temporal         | Aplica filtro K3 para corrigir transições abruptas e suavizar a série de classes.  |
 
 ## 📁 Estrutura Recomendada
 
