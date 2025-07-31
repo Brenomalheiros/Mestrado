@@ -55,24 +55,12 @@ A validação considera:
 
 | Nome do Script / Notebook        | Etapa do Pipeline                 | Descrição Resumida                                                                 |
 |----------------------------------|-----------------------------------|-------------------------------------------------------------------------------------|
-| `1001_selfSampling`              | Geração de Amostras               | Cria 30.000 pontos aleatórios com dados espectrais a partir do MapBiomas/DW.       |
-| `Sample_reviewer.ipynb`          | Seleção Automática das amostras de Classificação | Processa e estrutura amostras para posterior uso classificação com base na série de índices espectrais utilizados. São removidos outliers e amostras com comportamento divergente ao da classe .          |
-| `sample_label.py`                | Validação Visual das Amostras     | Interface para rotulagem manual com base em mosaicos Landsat (RGB, NDVI, MNDWI).   |
-| `1002-ML_RMRP-multiModel`        | Classificação Supervisionada      | Treina/aplica Random Forest com mosaicos e amostras validadas.                     |
-| `1003-ML_filtro_temporal`        | Pós-processamento Temporal        | Suaviza ruídos temporais aplicando filtro K3 à série classificada.                |
+| `1001_amostragem_automatica.js`              | Geração de Amostras               | Cria 30.000 pontos aleatórios com dados espectrais a partir do MapBiomas/DW.       |
+| `1002_filtro_amostras.ipynb`          | Seleção Automática das amostras de Classificação | Processa e estrutura amostras para posterior uso classificação com base na série de índices espectrais utilizados. São removidos outliers e amostras com comportamento divergente ao da classe .          |
+| `app_validacao_visual.py`                | Validação Visual das Amostras     | Interface para rotulagem manual com base em mosaicos Landsat (RGB, NDVI, MNDWI).   |
+| `1003_classificacao.js`        | Classificação Supervisionada      | Treina/aplica Random Forest com mosaicos e amostras validadas.                     |
+| `1004_filtro_classificacaol.js`        | Pós-processamento Temporal        | Suaviza ruídos temporais aplicando filtro K3 à série classificada.                |
 
-
-## 📁 Estrutura Recomendada
-
-```
-GEE/
-├── 1001_selfSampling
-├── 1002-ML_RMRP-multiModel
-├── 1003-ML_filtro_temporal
-├── utils/
-│   └── APP de Validação visual
-└── README.md
-```
 
 ## 📦 Requisitos
 
@@ -84,8 +72,8 @@ Os scripts são desenvolvidos na plataforma **Google Earth Engine**, portanto:
 
 ## 👤 Autor
 
-Breno Malheiros  
-Programa de Pós-Graduação em Engenharia Urbana – UFSCar  
+Breno M.
+Programa de Pós-Graduação em Engenharia Urbana (PPGEU – UFSCar) 
 Orientação: Prof. Dr. Fabio Noel Stanganini
 
 ---
