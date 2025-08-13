@@ -36,7 +36,7 @@ Amostras são geradas automaticamente com base no MapBiomas e Dynamic World, som
 
 ## 🧩 Tratamento de Pixels Mistos
 
-O estudo incorpora frações espectrais (SMA) diretamente na classificação para representar a composição interna dos pixels mistos — comuns em áreas urbanas com resolução de 30 m.
+O estudo incorpora frações espectrais (SMA) diretamente na classificação para representar a composição interna dos pixels mistos — comuns em áreas urbanas com resolução de 30 m. O comportamento esperado é o de classificação de acordo com a classe predominante na localidade coberta pelo pixel.
 
 ## 🧽 Filtros e Recuperação de Dados
 
