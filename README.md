@@ -67,8 +67,7 @@ A validação considera:
 Os scripts são desenvolvidos na plataforma **Google Earth Engine**, portanto:
 
 - Requer conta ativa no GEE
-- Scripts escritos em JavaScript (interface Code Editor)
-- Algumas análises complementares podem ser feitas em Python (opcional)
+- Scripts escritos em JavaScript (interface Code Editor) e Python (Google Colab)
 
 ## 👤 Autor
 
